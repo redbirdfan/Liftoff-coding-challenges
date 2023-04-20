@@ -1,0 +1,9 @@
+//Find the Smallest and Biggest Numbers
+function minMax(arr) {
+	let min = Math.min(...arr);
+	let max = Math.max(...arr)
+	answerArray = [min, max];
+return answerArray;	
+}
+
+console.log(minMax);
