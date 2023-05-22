@@ -1,0 +1,33 @@
+function LongestWord(sen) {
+  let alphabet = "abcdefghijklmnopqrstuvwxyz "
+  let char = sen.split("");
+  let newArray = [];
+
+ for(i=0; i < char.length; i++) {
+  if (alphabet.includes(char[i])) {
+    newArray.push(char[i])  
+   
+  } else {char.slice(i)
+  } ; 
+   }
+char = newArray.join(" ");
+
+wordArray = char.split("  ");
+
+for (j=0 ; j < wordArray.length; j++) {
+  let longWord = wordArray[0]
+
+  if(wordArray[j].length > longWord.length) {
+    return longWord = wordArray[j]
+  } 
+ 
+} sen = longWord
+
+
+  // code goes here  
+  return sen; 
+}
+
+   
+// keep this function call here 
+console.log(LongestWord(readline()));
