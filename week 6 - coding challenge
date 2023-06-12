@@ -1,0 +1,14 @@
+function detectWord(str) {
+	let lowAlpha = "abcdefghijklmnopqrstuvwxyz"
+	let strArray = str.split("");
+	let wordArray = [];
+	let word;
+	console.log(strArray);
+	for(i=0; i<strArray.length;i++){
+		if(lowAlpha.includes(strArray[i])) {
+			 wordArray.push(strArray[i])
+			str = wordArray.join("")
+			 } word = wordArray.join("")
+			
+		} return word
+							} 
